@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  TCSMemberDetailViewController.h
 //  TCSMembers
 //
 //  Created by Alex Yuh-Rern Wang on 10/9/14.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface TCSMemberDetailViewController : UIViewController
 
 @end
-
