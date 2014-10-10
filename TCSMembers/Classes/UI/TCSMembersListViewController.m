@@ -7,6 +7,7 @@
 //
 
 #import "TCSMembersListViewController.h"
+#import "TCSMemberDetailViewController.h"
 
 @interface TCSMembersListViewController ()<UITableViewDelegate, UITableViewDataSource>
 
@@ -23,7 +24,6 @@
     // Do any additional setup after loading the view.
     
     self.members = [[NSArray alloc] initWithObjects:@"Alex", @"Tim", @"Justin", nil];
-    NSLog(@"Members: %@", self.members);
 }
 
 - (void)didReceiveMemoryWarning {
@@ -57,6 +57,9 @@
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    TCSMemberDetailViewController *detailViewController = segue.destinationViewController;
+    [detailViewController setMemberName:[self.members objectAtIndex:[self.tableView indexPathForSelectedRow].row]];
+    
     [self.tableView deselectRowAtIndexPath:[self.tableView indexPathForSelectedRow] animated:YES];
 }
 

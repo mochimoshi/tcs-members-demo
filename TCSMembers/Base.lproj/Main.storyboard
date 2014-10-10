@@ -68,6 +68,9 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="memberNameLabel" destination="ImN-tf-AU6" id="HP1-Hl-v7o"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HcJ-fR-W4t" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

@@ -10,4 +10,6 @@
 
 @interface TCSMemberDetailViewController : UIViewController
 
+@property (strong, nonatomic) NSString *memberName;
+
 @end

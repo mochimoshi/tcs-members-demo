@@ -10,6 +10,8 @@
 
 @interface TCSMemberDetailViewController ()
 
+@property (weak, nonatomic) IBOutlet UILabel *memberNameLabel;
+
 @end
 
 @implementation TCSMemberDetailViewController
@@ -17,6 +19,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    [self.memberNameLabel setText:self.memberName];
 }
 
 - (void)didReceiveMemoryWarning {
